@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="options">
+        <input type="date" />
+        <select id="countryPicker"> </select>
+
+        <h3 id="country"></h3>
+        <p>Total number of deaths: <span id="deaths"></span></p>
+        <p>Total number of critical cases: <span id="critical-cases"></span></p>
+      </div>
+      <canvas width="100" height="100" id="myChart"></canvas>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
