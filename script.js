@@ -14,7 +14,7 @@ const deathsElement = document.querySelector('#deaths');
 const countryPicker = document.querySelector('#countryPicker');
 const country = document.querySelector('#country');
 const criticalCasesElement = document.querySelector('#critical-cases');
-var ctx = document.getElementById('myChart').getContext('2d');
+const ctx = document.getElementById('myChart').getContext('2d');
 
 let pickedCountry = 'Netherlands'; //set initial country
 country.innerText = pickedCountry;
@@ -47,6 +47,13 @@ function formatDate(date) {
 
   return [year, month, day].join('-');
 }
+
+const today = () => {
+  pickedDate = formatDate(Date.now());
+  datePicker.value = pickedDate;
+  api(pickedDate, pickedCountry);
+  changeChart();
+};
 
 //countries
 
