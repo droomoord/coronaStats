@@ -1,13 +1,32 @@
-.container {
+body {
+  font-family: Sans-Serif;
+}
+
+#container {
+  display: block;
+}
+
+#options {
   display: block;
 }
 
 @media (min-width: 520px) {
-  .container {
+  #container {
     display: flex;
   }
+
+  #options {
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #options > * {
+    margin-bottom: 10px;
+  }
+
   canvas {
-    width: 800px !important;
-    height: 90vh !important;
+    width: 100vw !important;
+    max-width: 600px;
   }
 }
