@@ -1,0 +1,1 @@
+A simple static page with vanilla javascript that fetches data from an API. The API data is coming from the Johns Hopkins University. The page can be viewed at: https://droomoord.github.io/coronaStats/index.html
